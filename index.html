@@ -18,8 +18,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Protest+Riot&family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Karla:wght@300&family=Protest+Riot&family=Source+Code+Pro&display=swap" rel="stylesheet">
   </head>
   <style>
     * {
@@ -32,17 +32,11 @@
     }
     .head{
       font-family: "Protest Riot", sans-serif;
-      background: linear-gradient(
-        90deg,
-        rgba(107, 72, 22, 1) 0%,
-        rgba(253, 115, 29, 1) 47%,
-        rgba(252, 234, 69, 1) 100%
-      );
-      -webkit-background-clip: text;
-      color: transparent;
+      font-weight: 500;
+      color:#00827f;
     }
     .head:hover{
-      color: rgb(150, 115, 11);
+      color:#0ea9a6
     }
     .container {
       justify-content: center;
@@ -67,14 +61,7 @@
       font-weight: 900;
       font-size: 65px;
       font-family: "Protest Riot", sans-serif;
-      background: linear-gradient(
-        90deg,
-        rgba(107, 72, 22, 1) 0%,
-        rgba(253, 115, 29, 1) 47%,
-        rgba(252, 234, 69, 1) 100%
-      );
-      -webkit-background-clip: text;
-      color: transparent;
+      color: #00827f;
       display: inline-block;
     }
 
@@ -98,6 +85,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 200px;
+    }
+    @media screen and (max-width: 600px) {
+      .brand {
+        margin-top: 10px;
+      }
     }
 
     .brand h2 {
@@ -148,7 +141,7 @@
   font-size: 20px;
   font-weight: 700;
   font-family: "Protest Riot", sans-serif;
-  color: orange;
+  color: #051082;
 }
 .card{
   border: none;
@@ -176,6 +169,30 @@
     color: orange;
   }
 
+  .row.align-items-start .col-md-3 img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  .mar-botm{
+    margin-bottom: 30px;
+  }
+  .opening-hours {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .opening-hours p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #495057;
+  }
+
+  .opening-hours p.closed {
+    color: #dc3545;
+  }
   </style>
   <body>
     <nav
@@ -205,13 +222,13 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="tel:03130114301"
-                ><i class="fa-solid fa-phone"></i> Call Now</a
+                ><span class="head"> <i class="fa-solid fa-phone"></i> Call Now</span></a
               >
             </p>
             <li class="nav-item">
               <a class="nav-link" target="_blank" href="https://www.google.com/maps/place/Bolan+Hardware+and+tools+Boltan+Market/@24.8525494,67.0015295,18.01z/data=!4m6!3m5!1s0x3eb33f00545135a5:0xec3eeb98eb82807a!8m2!3d24.853138!4d67.0038919!16s%2Fg%2F11vp_j3kz1?entry=ttu" tabindex="-1" aria-disabled="true"
-                ><i class="fa-solid fa-diamond-turn-right"></i> Get
-                Direction</a
+                > <span class="head"><i class="fa-solid fa-diamond-turn-right"></i> Get
+                  Direction</span></a
               >
             </p>
           </ul>
@@ -219,8 +236,9 @@
       </div>
     </nav>
     <div class="container-fuild">
-      <br /><br />
       <div class="container">
+        <img src="/img/main.jpeg" alt="" />
+        <br><br><br>
         <h1>Universal Hearing Aid</h1>
         <p>
           Hearing Aid In Karachi <br />
@@ -232,16 +250,15 @@
         </button></a>
 
         <br /><br /><br /><br />
-        <img src="/img/main.jpeg" alt="" />
       </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
       <div class="brand">
-        <h2>Brands</h2><br><br><br>
+        <h2>BRANDS</h2><br><br><br>
       </div>
       <div class="container-fuild">
-        <div class="row align-items-start">
+        <center>
+        <div class="row align-items-center">
           <div class="col-md-3">
-            <img class="img1" src="/img/ss.jpg" alt="">
+            <img class="img1" src="/img/sie.jpg" alt="">
           </div>
           <div class="col-md-3">
             <img src="/img/Intertone.jpg" alt="">
@@ -253,9 +270,10 @@
             <img width="100%" src="/img/Unitron.jpg" alt="">
           </div>
         </div>
+      </center>
     </div>
 
-    <h2 class="Reviews">Reviews</h2>
+    <h2 class="Reviews">TESTIMONIALS</h2>
     <center>
     <div class="container-fuild">
       <div class="row align-items-start">
@@ -324,15 +342,78 @@
 
         </div>
       </div>
+      <div class="row align-items-start">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <p class="card-title star">2 years ago <br> <span>★★★★★</span> 
+              </p>
+              <p class="card-text"><q>Good shop ,you can buy here quality hearing aid.</q></p>
+              <p class="name">- Hassan Azezee </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <p class="card-title star">2 months ago <br> <span>★★★★★</span></p>
+              <p class="card-text"><q>Great experience, My father visiting this shop since 2016 and totally satisfied from their behavior and response. Talha bhai are rocks.</q></p>
+              <p class="name">- Aslam</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <p class="card-title star">7 months ago <br> <span>★★★★★</span></p>
+              <p class="card-text">
+               <q>Alhamdolillah,  I'm  satisfied with Universal Hearing aid.  They  are very  professionals and honest.
+                Thanks a lot for providing very good service.</q></p>
+              <p class="name">- Imtiyaz Bantva</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <p class="card-title star">2 years ago <br> <span>★★★★★</span> 
+              </p>
+              <p class="card-text"><q>Good shop ,you can buy here quality hearing aid.</q></p>
+              <p class="name">- Hassan Azezee </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <p class="card-title star">2 months ago <br> <span>★★★★★</span></p>
+              <p class="card-text"><q>Great experience, My father visiting this shop since 2016 and totally satisfied from their behavior and response. Talha bhai are rocks.</q></p>
+              <p class="name">- Aslam</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <p class="card-title star">7 months ago <br> <span>★★★★★</span></p>
+              <p class="card-text">
+               <q>Alhamdolillah,  I'm  satisfied with Universal Hearing aid.  They  are very  professionals and honest.
+                Thanks a lot for providing very good service.</q></p>
+              <p class="name">- Imtiyaz Bantva</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
       <center>
-      <button type="button" class="btn btn-outline-warning btn-md">
-        Write a Reviews
-      </button>
-      <button type="button" class="btn btn-outline-warning btn-md">
-        Read More
+        <button type="button" class="btn btn-outline-warning btn-md" id="readMoreBtn">
+            Read More
       </button></center>
   </div></center><br><br>
-  <h2 class="Reviews">About Us</h2>
+  <h2 class="Reviews">ABOUT US</h2>
   <div class="container-fuild">
     <div class="about">
       Since 2010, Alhamdulillah, we have been dedicated to the field of hearing aid, and we are delighted to report that we have not received any complaints throughout our journey. Our unwavering commitment to excellence is reflected in the superior quality we consistently provide. We take pride in offering top-notch products and services, and our professional team, including experienced doctors, ensures that all tests and evaluations are conducted with precision. <br><br>
@@ -340,92 +421,104 @@
 Your satisfaction is our priority, and we are honored to continue delivering the highest standards in the realm of hearing solutions.
     </div>
   </div><br><br>
-  <h2 class="Reviews">Gallery</h2><br><br>
+  <h2 class="Reviews">GALLERY</h2><br><br>
   <div class="container-fuild">
     <center>
-    <div class="row align-items-start">
-      <div class="col-md-3">
-        <img width="100%" src="/img/g1.jpeg" alt="">
-        <br><p class="title">BTE: Behind The Ear Hearing</p><br>
-      </div>
-      <div class="col-md-3">
-        <img width="100%" src="/img/g2.jpeg" alt="">
-        <br><p class="title">IIC: Invisible In Canal</p><br>
-
-      </div>
-      <div class="col-md-3">
-        <img height="210" width="100%" src="/img/g3.jpeg" alt="">
-        <br><p class="title">BTE</p><br>
-
-      </div>
-      <div class="col-md-3">
-        <img width="100%" src="/img/g4.jpeg" alt="">
-        <br><p class="title">Unitron Invisible In Canal</p><br>
-
+      <div class="row align-items-start">
+        <div class="col-md-3">
+          <img src="/img/g1.jpeg" alt="">
+          <br>
+        </div>
+        <div class="col-md-3">
+          <img src="/img/g2.jpeg" alt="">
+          <br>
+        </div>
+        <div class="col-md-3">
+          <img src="/img/g3.jpeg" alt="">
+          <br>
+        </div>
+        <div class="col-md-3">
+          <img src="/img/g4.jpeg" alt="">
+          <br>
+        </div>
       </div>
       <div class="row align-items-start">
         <div class="col-md-3">
-          <img width="100%" src="/img/g5.jpeg" alt="">
-          <br><p class="title">Unitron</p><br>
-
+          <img src="/img/g5.jpeg" alt="">
+          <br>
         </div>
         <div class="col-md-3">
-          <img width="100%" src="/img/g6.jpeg" alt="">
-          <br><p class="title">Love Of Experience</p><br>
-
+          <img src="/img/g6.jpeg" alt="">
+          <br>
         </div>
         <div class="col-md-3">
-          <img height="210" width="100%" src="/img/g7.jpeg" alt="">
-          <br><p class="title">BTE: Signia</p>
-
+          <img src="/img/g7.jpeg" alt="">
+          <br>
         </div>
         <div class="col-md-3">
-          <img width="100%" src="/img/g8.jpeg" alt="">
-          <br><p class="title">RIC: Reciver In Canal</p>
-
+          <img src="/img/g8.jpeg" alt="">
+          <br>
         </div>
-    </div>
-</div></center>
+      </div></center>
 <br><br>
-  <h2 class="Reviews">Location</h2><br><br>
+  <h2 class="Reviews">CONTACT US</h2><br><br>
   <center>
 <a href="https://www.google.com/maps/place/Bolan+Hardware+and+tools+Boltan+Market/@24.8525494,67.0015295,18.01z/data=!4m6!3m5!1s0x3eb33f00545135a5:0xec3eeb98eb82807a!8m2!3d24.853138!4d67.0038919!16s%2Fg%2F11vp_j3kz1?entry=ttu"><img width="90%" src="/img/mapp.JPG" alt=""></a><br><br><br>
-<h4>Address</h4>
-<p>Shop No.94, Gate No.2, Burhani Centre Marriot Road
-  M.A Jinnah Road
-  near Boltan Market
-  Karachi, 75850
-  Pakistan</p>
-</center><br><br>
-<center>
-  <h2 class="Reviews">Contact</h2><br><br><br><br>
+</center>
 
 <div class="container-fuild">
   <div class="row align-items-start">
-    <div class="col-md-6">
+    <div class="col-md-6 mar-botm">
+      <h5>Contact</h5>
       <a target="_blank" href="https://api.whatsapp.com/send?phone=03130114301&text=Hello%2C%20I%20Need%20you%20More%20Info!%3F">
-      <button type="button" href class="btn btn-success"> <i class="fa-brands fa-whatsapp"></i> What'sApp</button></a><br><br><br>
-     <a href="tel:03130114301"> <button type="button" class="btn btn-warning">Call Now 0313 0114301</button></a>
-    </div>
+        <button type="button" href class="btn btn-success"> <i class="fa-brands fa-whatsapp"></i> What'sApp</button></a><br><br>
+        <a href="tel:03130114301"> <button type="button" class="btn btn-warning">Call Now 0313 0114301</button></a>
+        
+      </div><br><br><br>
 
-    <div class="col-md-6">
- <h4>Opening Hours</h4><br><br>
-
-  <p>Mon:	11:00 am – 10:00 pm</p>
-<p>Tue:  11:00 am – 10:00 pm</p>
-<p>Wed:  11:00 am – 10:00 pm</p>
-<p>Thus: 11:00 am – 10:00 pm</p>
-<p>Fri:  11:00 am – 10:00 pm</p>
-<p>Sat:  11:00 am – 10:00 pm</p>
-<p>Sun closed</p>
-    </div>
+      <div class="col-md-6 mar-botm">
+        <h5>Address</h5>
+        <p>Shop No.94,Marriot Road
+          M.A Jinnah Road
+          near Boltan Market
+          Karachi, 75850
+          Pakistan</p>
+      </div>
+      <div class="col-md-6 mar-botm opening-hours">
+        <h5>Opening Hours</h5>
+        <p>Mon: 11:00 am – 10:00 pm</p>
+        <p>Tue: 11:00 am – 10:00 pm</p>
+        <p>Wed: 11:00 am – 10:00 pm</p>
+        <p>Thu: 11:00 am – 10:00 pm</p>
+        <p>Fri: 11:00 am – 10:00 pm</p>
+        <p>Sat: 11:00 am – 10:00 pm</p>
+        <p class="closed">Sun: Closed</p>
+      </div>
   </div>
-</div></center>
+</div>
 <hr><center><p>@Copyright by Usama Jawaid</p></center>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+$(document).ready(function(){
+  $(".row.align-items-start .col-md-4:gt(5)").hide();
+  
+  $("#readMoreBtn").click(function(){
+    $(".row.align-items-start .col-md-4:gt(5)").toggle();
+    var buttonText = $(this).text() === "Read Less" ? "Read More" : "Read Less";
+    $(this).text(buttonText);
+  });
+});
+      </script>
   </body>
 </html>
